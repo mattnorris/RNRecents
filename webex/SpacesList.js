@@ -65,6 +65,7 @@ export default function SpacesList({
   return (
     <FlatList className="ciscospark-spaces-list"
       data={spaces}
+      extraData={activeSpaceId}
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
     />
